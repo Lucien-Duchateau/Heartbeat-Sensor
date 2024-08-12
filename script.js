@@ -11,9 +11,9 @@ document.body.addEventListener("click", (event) => {
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 const calculate_bpm = async () => {
-  await delay(4800);
+  await delay(4900);
   document.body.style = "background-color: red;";
-  await delay(200);
+  await delay(100);
   let pulses = prompt("Pulses?");
   let bpm = pulses * 12;
   alert(`Your BMP is ${bpm}`)
